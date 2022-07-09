@@ -3805,7 +3805,7 @@ select {
 }
 
 .about__area.st-2 {
-  padding-top: 160px;
+  padding-top: 80px;
   padding-bottom: 55px;
 }
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
@@ -4209,6 +4209,7 @@ select {
   margin-left: -115px;
   position: relative;
   z-index: 5;
+  border-radius: 15px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .choosing__information {
@@ -4258,13 +4259,13 @@ select {
   }
 }
 .choosing__number span {
-  border: 1px solid #8f98a8;
+  border: 2px solid #ffc400;
   color: #ffffff;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   text-align: center;
-  line-height: 58px;
+  line-height: 35px;
   border-radius: 50%;
   position: relative;
   -webkit-transition: all 0.5s ease-out 0s;
@@ -4276,9 +4277,9 @@ select {
 .choosing__number span:before {
   position: absolute;
   content: "";
-  width: 76px;
-  height: 76px;
-  border: 1px solid #8f98a8;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #8f98a8;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -4294,8 +4295,8 @@ select {
 }
 
 .subscribe {
-  width: 220px;
-  padding: 19px 29px;
+  width: 125px;
+  
   background: #ffffff;
   border-radius: 5px;
   position: absolute;
@@ -5607,7 +5608,7 @@ select {
 */
 .portfolio-area {
   padding-top: 140px;
-  padding-bottom: 100px;
+ 
 }
 @media (max-width: 767px) {
   .portfolio-area {
@@ -6345,12 +6346,12 @@ select {
 
 .portfolio-active .swiper-button-prev, .portfolio-active .swiper-button-next {
   font-size: 20px;
-  color: #6d6d6d;
+  color: #ffffff;
   height: 48px;
   width: 54px;
   text-align: center;
   line-height: 46px;
-  background: #f2f2f2;
+  background: #8601d1;
   display: inline-block;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -8020,8 +8021,8 @@ select {
 *************************
 */
 .hire-area {
-  padding-top: 185px;
-  padding-bottom: 185px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8910,7 +8911,7 @@ input.main-search-input::placeholder {
 }
 
 .footer-widget p {
-  color: #858585;
+  color: #d4d4d4;
   line-height: 26px;
   font-size: 16px;
 }
@@ -9074,7 +9075,7 @@ input.main-search-input::placeholder {
   color: #ffffff;
   background: #8500d1;
   line-height: 35px;
-  border-radius: 50%;
+  border-radius: 25%;
 }
 .grb__social.footer-social-2 li a:hover {
   color: #8500d1;
@@ -9109,7 +9110,7 @@ input.main-search-input::placeholder {
 .copyright-area.st-2 {
   border-top: 1px solid #343434;
   background: #040021;
-  padding: 37px 0;
+  padding: 25px 0;
 }
 
 .copyright-logo {
