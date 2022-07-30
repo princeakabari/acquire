@@ -6534,7 +6534,7 @@ select {
   color: #040021;
 }
 .team-member.st-2:hover .member-name span {
-  color: #8f98a8;
+  color: #dadada;
 }
 .team-member.st-2 .member-img {
   border-radius: 135px;
@@ -6749,12 +6749,12 @@ select {
   height: 90px;
   margin-left: auto;
   margin-right: auto;
-  padding: 26px 25px 20px;
+  padding: 17px 14px 0px;
   border-radius: 10px;
   margin-top: -50px;
   position: relative;
   z-index: 2;
-  width: 220px;
+  background-color: #040021;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -6768,15 +6768,16 @@ select {
   }
 }
 .member-name h5 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 3px;
+  color: white;
 }
 .member-name h5:hover a {
   opacity: 0.8;
 }
 .member-name span {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
 }
 
