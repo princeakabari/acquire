@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
+<body id="content">
     <header>
         <div class="header__top d-none d-md-block header__top-2">
             <div class="container">
@@ -167,13 +167,14 @@
                     </div>
                 </div>
                 <div class="mobile-menu d-lg-none"></div>
-                
 
-               
+
+
 
                 <div class="side-map mt-20 mb-30 d-none d-lg-block">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.071475551684!2d72.55834731472507!3d23.05784102079564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c26dd611fd%3A0xcd718f0ed27bdb0c!2sAcquire%20Web%20Solution!5e0!3m2!1sen!2sin!4v1657427429973!5m2!1sen!2sin" ></iframe>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.071475551684!2d72.55834731472507!3d23.05784102079564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c26dd611fd%3A0xcd718f0ed27bdb0c!2sAcquire%20Web%20Solution!5e0!3m2!1sen!2sin!4v1657427429973!5m2!1sen!2sin"></iframe>
+                </div>
 
 
 
@@ -918,7 +919,7 @@
                             <p>What do you get when you bring a team of believers, thinkers, and creators together and
                                 task them with creating extraordinary services? You get Acquire Web Solution.</p>
                             <div class="grb__social footer-social-2">
-                                
+
                                 <ul>
                                     <li><a href="https://www.facebook.com/Acquire-Web-Solution-105268808906237"><i
                                                 class="fab fa-facebook-f"></i></a></li>
@@ -1003,6 +1004,8 @@
             </div>
         </div>
     </footer>
+
+
     <!-- footer area end -->
     <!-- JS here -->
     <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -1020,6 +1023,29 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+<div id="loader"></div>
+<script>var loader;
+
+    function loadNow(opacity) {
+        if (opacity <= 0) {
+            displayContent();
+        } else {
+            loader.style.opacity = opacity;
+            window.setTimeout(function () {
+                loadNow(opacity - 0.05);
+            }, 50);
+        }
+    }
+
+    function displayContent() {
+        loader.style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById('loader');
+        loadNow(1);
+    });</script>
 
 </html>
 <!--Development By Acquire Web Solution Pvt. Ltd. V 1.0.0-->

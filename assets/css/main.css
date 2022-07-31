@@ -47,6 +47,24 @@ body {
   font-style: normal;
   color: #8f98a8;
 }
+#loading {
+  background: url('https://cdn.dribbble.com/users/1204495/screenshots/11563915/loader_shapes_4_white_back.gif') no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+}
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #fff url('https://cdn.dribbble.com/users/1204495/screenshots/11563915/loader_shapes_4_white_back.gif') no-repeat center center;
+}
+
 
 .img,
 img {
