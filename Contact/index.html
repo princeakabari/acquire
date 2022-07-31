@@ -20,6 +20,56 @@
     <link rel="stylesheet" href="../assets/css/meanmenu.css">
     <link rel="stylesheet" href="../assets/css/flaticon.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.34883" type="text/javascript"></script>
+    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.34883" type="text/javascript"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+    <script src="https://cdn03.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.34883" type="text/javascript"></script>
+    <script defer src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.34883"
+        type="text/javascript"></script>
+    <script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.34883"
+        type="text/javascript"></script>
+    <script type="text/javascript">	JotForm.newDefaultTheme = true;
+        JotForm.extendsNewTheme = false;
+        JotForm.newPaymentUIForNewCreatedForms = true;
+        JotForm.newPaymentUI = true;
+        JotForm.clearFieldOnHide = "disable";
+        JotForm.submitError = "jumpToFirstError";
+
+        JotForm.init(function () {
+            /*INIT-START*/
+            JotForm.setPhoneMaskingValidator('input_5_full', '(###) ###-####');
+            if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex', 0);
+            JotForm.setCustomHint('input_6', 'Type here...');
+            JotForm.alterTexts(undefined);
+            /*INIT-END*/
+        });
+
+        JotForm.prepareCalculationsOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, { "description": "", "name": "name", "qid": "3", "text": "Name", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "4", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber", "qid": "5", "text": "Phone Number", "type": "control_phone" }, { "description": "", "name": "typeA", "qid": "6", "subLabel": "", "text": "Type a question", "type": "control_textarea" }]);
+        setTimeout(function () {
+            JotForm.paymentExtrasOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Submit", "type": "control_button" }, { "description": "", "name": "name", "qid": "3", "text": "Name", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "4", "subLabel": "example@example.com", "text": "Email", "type": "control_email" }, { "description": "", "name": "phoneNumber", "qid": "5", "text": "Phone Number", "type": "control_phone" }, { "description": "", "name": "typeA", "qid": "6", "subLabel": "", "text": "Type a question", "type": "control_textarea" }]);
+        }, 20); 
+    </script>
+    <style type="text/css">
+        @media print {
+            .form-section {
+                display: inline !important
+            }
+
+            .form-pagebreak {
+                display: none !important
+            }
+
+            .form-section-closed {
+                height: auto !important
+            }
+
+            .page-section {
+                position: initial !important
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -158,7 +208,8 @@
             <div class="side-info-content">
                 <div class="offset-widget offset-logo mb-30 pb-20">
                     <div class="row align-items-center">
-                        <div class="col-9"><a href="../index.html"><img src="../assets/img/logo/logo1.png" alt="Logo"></a>
+                        <div class="col-9"><a href="../index.html"><img src="../assets/img/logo/logo1.png"
+                                    alt="Logo"></a>
                         </div>
                         <div class="col-3 text-end"><button class="side-info-close"><i
                                     class="fal fa-times"></i></button>
@@ -175,11 +226,12 @@
                     </form>
                 </div>
 
-               
+
 
                 <div class="side-map mt-20 mb-30 d-none d-lg-block">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.071475551684!2d72.55834731472507!3d23.05784102079564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c26dd611fd%3A0xcd718f0ed27bdb0c!2sAcquire%20Web%20Solution!5e0!3m2!1sen!2sin!4v1657427429973!5m2!1sen!2sin" ></iframe>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.071475551684!2d72.55834731472507!3d23.05784102079564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c26dd611fd%3A0xcd718f0ed27bdb0c!2sAcquire%20Web%20Solution!5e0!3m2!1sen!2sin!4v1657427429973!5m2!1sen!2sin"></iframe>
+                </div>
 
 
 
@@ -233,7 +285,8 @@
     <!-- end fullscreen search -->
     <main>
         <!-- page title area start  -->
-        <section class="page-title-area" data-background="../assets/img/bg/page-title-bg1.png" style="background-image: url(&quot;assets/img/bg/page-title-bg.jpg&quot;);">
+        <section class="page-title-area" data-background="../assets/img/bg/page-title-bg1.png"
+            style="background-image: url(&quot;assets/img/bg/page-title-bg.jpg&quot;);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -277,7 +330,8 @@
                                         <i class="fas fa-envelope"></i>
                                     </div>
                                     <div class="contact-list-text">
-                                        <span><a href="mailto:info@acquirewebsolution.com">info@acquirewebsolution.com</a></span>
+                                        <span><a
+                                                href="mailto:info@acquirewebsolution.com">info@acquirewebsolution.com</a></span>
                                         <!-- <span><a href="#">hello@domain.com</a></span> -->
                                     </div>
                                 </li>
@@ -286,7 +340,8 @@
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div class="contact-list-text">
-                                        <span><a href="https://maps.app.goo.gl/pgSpdw43LCay4nKz9">Rang Jyot Society, Naranpura,<br> Ahmedabad, Gujarat 380013</a></span>
+                                        <span><a href="https://maps.app.goo.gl/pgSpdw43LCay4nKz9">Rang Jyot Society,
+                                                Naranpura,<br> Ahmedabad, Gujarat 380013</a></span>
                                     </div>
                                 </li>
                             </ul>
@@ -297,31 +352,148 @@
                             <div class="contact-heading">
                                 <h4>Get in Touch</h4>
                             </div>
-                            <form class="contact-form" action="#">
-                                <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="col-md-6 mb-30">
-                                        <input type="text" placeholder="First Name">
-                                    </div>
-                                    <div class="col-md-6 mb-30">
-                                        <input type="text" placeholder="Last Name">
-                                    </div>
-                                    <div class="col-md-6 mb-30">
-                                        <input type="text" placeholder="Email">
-                                    </div>
-                                    <div class="col-md-6 mb-30">
-                                        <input type="text" placeholder="Phone">
-                                    </div>
-                                    <div class="col-md-12 mb-30">
-                                        <input type="text" placeholder="Subject">
-                                    </div>
-                                    <div class="col-md-12 mb-30">
-                                        <textarea name="message" placeholder="Messages....."></textarea>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
-                                    </div>
+
+                            <form class="contact-form" action="https://submit.jotform.com/submit/221765531655055/"
+                                method="post" name="form_221765531655055" id="221765531655055" accept-charset="utf-8"
+                                autocomplete="on">
+                                <input type="hidden" name="formID" value="221765531655055" />
+                                <input type="hidden" id="JWTContainer" value="" />
+                                <input type="hidden" id="cardinalOrderNumber" value="" />
+                                <div role="main" class="row wow fadeInUp"
+                                    style="visibility: visible; animation-name: fadeInUp;">
+                                    <style>
+                                        .form-all:before {
+                                            background: none;
+                                        }
+                                    </style>
+                                    <ul class="form-section page-section">
+                                        <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+                                            <label class="form-label form-label-top form-label-auto col-md-6 mb-30"
+                                                id="label_3" for="first_3">
+
+                                            </label>
+                                            <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
+                                                <div data-wrapper-react="true">
+                                                    <span class="form-sub-label-container" style="vertical-align:top"
+                                                        data-input-type="first">
+                                                        <input type="text" id="first_3" name="q3_name[first]"
+                                                            class="form-textbox validate[required]" data-defaultvalue=""
+                                                            autoComplete="section-input_3 given-name" size="10" value=""
+                                                            data-component="first"
+                                                            aria-labelledby="label_3 sublabel_3_first" required=""
+                                                            placeholder="First Name" />
+
+                                                    </span>
+                                                    <label
+                                                        class="form-label form-label-top form-label-auto col-md-6 mb-30"
+                                                        id="label_3" for="first_3">
+
+                                                    </label>
+                                                    <span class="form-sub-label-container" style="vertical-align:top"
+                                                        data-input-type="last">
+                                                        <input type="text" id="last_3" name="q3_name[last]"
+                                                            class="form-textbox validate[required]" data-defaultvalue=""
+                                                            autoComplete="section-input_3 family-name" size="15"
+                                                            value="" data-component="last"
+                                                            aria-labelledby="label_3 sublabel_3_last" required=""
+                                                            placeholder="Last Name" />
+
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="form-line jf-required" data-type="control_email" id="id_4">
+                                            <label class="form-label form-label-top form-label-auto" id="label_4"
+                                                for="input_4">
+
+                                            </label>
+                                            <div id="cid_4" class="form-input-wide jf-required" data-layout="half">
+                                                <span class="form-sub-label-container" style="vertical-align:top">
+                                                    <input type="email" id="input_4" name="q4_email"
+                                                        class="form-textbox validate[required, Email]"
+                                                        data-defaultvalue="" style="width:310px" size="310" value=""
+                                                        data-component="email"
+                                                        aria-labelledby="label_4 sublabel_input_4" required=""
+                                                        placeholder="Email" />
+
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="form-line jf-required" data-type="control_phone" id="id_5">
+                                            <label class="form-label form-label-top form-label-auto" id="label_5"
+                                                for="input_5_full">
+
+                                            </label>
+                                            <div id="cid_5" class="form-input-wide jf-required" data-layout="half">
+                                                <span class="form-sub-label-container" style="vertical-align:top">
+                                                    <input type="tel" id="input_5_full" name="q5_phoneNumber[full]"
+                                                        data-type="mask-number"
+                                                        class="mask-phone-number form-textbox validate[required, Fill Mask]"
+                                                        data-defaultvalue="" autoComplete="section-input_5 tel-national"
+                                                        style="width:310px" data-masked="true" value=""
+                                                        data-component="phone"
+                                                        aria-labelledby="label_5 sublabel_5_masked" required=""
+                                                        placeholder="Phone Number" maxlength="10"/>
+
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_textarea" id="id_6">
+                                            
+                                            <label class="form-label form-label-top form-label-auto" id="label_5"
+                                                for="input_5_full">
+
+                                            </label>
+                                                <div id="cid_6" class="form-input-wide" data-layout="full">
+                                                    <textarea id="input_6" class="form-textarea" name="q6_typeA"
+                                                        style="width:648px;height:163px" data-component="textarea"
+                                                        aria-labelledby="label_6" placeholder="Enter Your Enquiry"></textarea>
+                                                </div>
+                                        </li>
+                                        <li class="form-line" data-type="control_button" id="id_2">
+                                            <div id="cid_2" class="form-input-wide" data-layout="full">
+                                                <div data-align="auto"
+                                                    class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                                                    <button id="input_2" type="submit"
+                                                        class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                                                        data-component="button" data-content="">
+                                                        Submit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="display:none">
+                                            Should be Empty:
+                                            <input type="text" name="website" value="" />
+                                        </li>
+                                    </ul>
                                 </div>
+                                <script>
+                                    JotForm.showJotFormPowered = "new_footer";
+                                </script>
+                                <script>
+                                    JotForm.poweredByText = "Powered by Jotform";
+                                </script>
+                                <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                                    value="221765531655055" />
+                                <script type="text/javascript">
+                                    var all_spc = document.querySelectorAll("form[id='221765531655055'] .si" + "mple" + "_spc");
+                                    for (var i = 0; i < all_spc.length; i++) {
+                                        all_spc[i].value = "221765531655055-221765531655055";
+                                    }
+                                </script>
+
                             </form>
+                            <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.34883"></script>
+                            <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.34883"></script>
+                            <script
+                                type="text/javascript">window.GOOGLE_SIGNON = "172124630376-qk1qmdfmur2ojaf39e070iqhpt2foaip.apps.googleusercontent.com"</script>
+                            <script type="text/javascript">window.FACEBOOK_SIGNON_APP_ID = "1140740696088074"</script>
+                            <script
+                                type="text/javascript">window.MICROSOFT_SIGNON_CLIENT_ID = "482577e8-f8d0-4a09-bbbb-15de3d05eebe"</script>
+                            <script>window.JotFormAPIEndpoint = "https://api.jotform.com"; </script>
+                            <script>window.JFForm = { id: '221765531655055', skippable: true, isHipaa: '' };</script>
+                            <script defer src="https://cdn.jotfor.ms//common/FormUserScripts.js?v=3.3.34883"></script>
                         </div>
                     </div>
                 </div>
@@ -330,7 +502,8 @@
         <!-- contact area end -->
         <!-- map area start  -->
         <div class="contact-map-area">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041981.899057291!2d-87.62979822192196!3d41.878113633413804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sbd!4v1627994034288!5m2!1sen!2sbd"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041981.899057291!2d-87.62979822192196!3d41.878113633413804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sbd!4v1627994034288!5m2!1sen!2sbd"></iframe>
         </div>
         <!-- map area end -->
         <!-- brand area start  -->
@@ -457,7 +630,7 @@
             </div>
         </div> -->
         <!-- brand area end -->
-        
+
     </main>
     <!-- footer area start  -->
     <footer>
@@ -474,7 +647,7 @@
                             <p>What do you get when you bring a team of believers, thinkers, and creators together and
                                 task them with creating extraordinary services? You get Acquire Web Solution.</p>
                             <div class="grb__social footer-social-2">
-                                
+
                                 <ul>
                                     <li><a href="https://www.facebook.com/Acquire-Web-Solution-105268808906237"><i
                                                 class="fab fa-facebook-f"></i></a></li>

@@ -3642,7 +3642,7 @@ select {
   }
 }
 .content-404 h2 {
-  font-size: 225px;
+  font-size: 120px;
   font-weight: 900;
   line-height: 1;
   color: #6639ff;
@@ -5703,6 +5703,7 @@ select {
 }
 .portfolio-item-img img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .portfolio-hover-contnet {
@@ -5942,7 +5943,7 @@ select {
 
 .project-meta {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 22px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
